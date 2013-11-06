@@ -15,4 +15,4 @@ Make sure to bring your laptops/ipads/mobile devices... we're going to be having
 
 See you all there!
 
-Just open up index.html to view the slides!
+_**Just open up index.html to view the slides!**_
