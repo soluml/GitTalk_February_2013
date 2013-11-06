@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+
+	<title>Your deck.js Presentation</title>
+	
+	<!-- Required stylesheet -->
+	<link rel="stylesheet" href="core/deck.core.css">
+	
+	<!-- Extension CSS files go here. Remove or add as needed. -->
+	<link rel="stylesheet" href="extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="extensions/status/deck.status.css">
+	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
+
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="themes/style/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="themes/transition/horizontal-slide.css">
+	
+	<!-- Required Modernizr file -->
+	<script src="modernizr.custom.js"></script>
+</head>
+<body class="deck-container">
+
+<!-- Begin slides. Just make elements with a class of slide. -->
+<section class="slide">
+	<h1>Responsive / Adaptive Design</h1>
+  <h5>Follow Along: http://t.co/S4NaeUq062</h5>
+</section>
+
+<section class="slide">
+	<h2>Who am I?</h2>
+  <ul>
+    <li>Benjamin Solum - <a href="http://www.soluml.com/">soluml.com</a> or <a href="http://www.twitter.com/soluml">@soluml</a></li>
+    <li>Front-end Web Guy &raquo; I <span style="color:red;">♥</span> JS</li>
+    <li>Web Developer by day at High Touch Technologies</li>
+    <li>ActionScript professor by night (Tuesday's) at Butler</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h1>Why Responsive?</h1>
+</section>
+
+<section class="slide">
+	<h2>Why Responsive?</h2>
+  <ul>
+  	<li>PC sales were expected to decline in 2012... for the <a href="http://www.slashgear.com/pc-sales-to-decline-in-2012-for-the-first-time-in-11-years-10251339/">first time since 2001</a>.</li>
+    <li>Digitimes estimates that channel sales of tablets will grow 38.3% annually in 2013 to reach 210 million units, <a href="http://bgr.com/2012/11/26/tablet-sales-2013-notebook-pc-sales/">topping laptop PC shipments for the first time</a>.</li>
+    <li>Whenever it happens... it's going to happen. Mobile traffic will overtake conventional PC traffic.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h1>Arguments Against</h1>
+</section>
+
+<section class="slide">
+	<h2><s>Objective</s> Arguments Against</h2>
+  <ol>
+    <li class="slide">You hate change. #tablesrock</li>
+    <li class="slide">You hate your clients. #moneysucks</li>
+    <li class="slide">You hate your job. #I'mSorry...</li>
+  </ol>
+</section>
+
+<section class="slide">
+	<h2>Objective Arguments Against</h2>
+  <h3>It can confuse the user...</h3>
+  <ul>
+    <li>Responsive design sacrifices "desktop web" convention due to lacking screen real-estate. Side columns can shift or disappear. Navigations may reorganize. This can be confusing/frustrating.</li>
+  </ul>
+  <div class="slide" id="Icanoptout">
+	  <h3>*Solution*</h3>
+  	<ul>
+    	<li>Allow users to opt out and switch to the full site <a href="http://css-tricks.com/user-opt-out-responsive-design/">#opt-out</a>. This is easier to implement if done from the get go! Also, don't sacrifice functionality if you don't have to... get creative!</li>
+  	</ul>
+  </div>
+</section>
+
+<section class="slide">
+	<h2>Objective Arguments Against</h2>
+  <h3>It takes longer / costs more...</h3>
+  <ul>
+    <li>Generally speaking, responsive designs take longer to design and build than their non-responsive counterparts.</li>
+    <li>Non-responsive sites look fine on my phone. Why bother?</li>
+  </ul>
+  <div class="slide">
+	  <h3>*Solution*</h3>
+  	<ul>
+    	<li>This can be true, but building a work of art often takes longer than building a piece of crap. You absolutely should convey the time/cost differences to your client, but, "it could take longer" isn't a good excuse to leave <acronym title="Responsive Web Design">RWD</acronym> out of your toolbelt. Give the solution most appropriate to the needs of the client.</li>
+      <li>Would it look better to your visitors if it was responsive? How does it work on a tablet? How about on a 72" LED TV? Responsive design scales both ways and accounts for any device regardless of screen size.</li>
+  	</ul>
+  </div>
+</section>
+
+<section class="slide">
+	<h2>Objective Arguments Against</h2>
+  <h3>It's compromises design</h3>
+  <ul>
+    <li>In responsive design, the convention is to build "mobile first". This often leads to design compromises.</li>
+  </ul>
+  <div class="slide">
+	  <h3>*Solution*</h3>
+  	<ul>
+    	<li>It doesn't have to. Your designer will have less screen real-estate to work with, but the power of media queries allows you to add design elements in as your screen gets bigger. Adaptive design also builds on this concept. Plus, we've given them the ability to <a href="#Icanoptout">opt out</a>... right?</li>
+  	</ul>
+  </div>
+</section>
+
+<section class="slide">
+	<h1>Should I use it?</h1>
+</section>
+
+<section class="slide">
+	<h2>Should I use it?</h2>
+  <ul>
+    <li>If your clients needs a web presence on multiple devices and can afford the extra cost of <acronym title="Responsive Web Design">RWD</acronym>, then choose a responsive design.</li>
+    <li>If not, sticking with a conventional design is probably the way to go.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h1>How do we do it?</h1>
+</section>
+
+<section class="slide">
+	<h1>Media Queries!</h1>
+</section>
+
+<section class="slide">
+	<h2>Media Queries</h2>
+  <ul>
+    <li>In CSS, web developers can define a media type such as screen or print, and specify the look of the content by specifying conditions such as width, height, or orientation. A media query combines a media type and a condition to specify how web content will appear on a particular receiving device. <a href="https://itservices.stanford.edu/service/web/mobile/about/terminology">#ThanksStanford</a></li>
+    <li>In layman's terms: Media Queries apply their CSS styles when their conditions are matched!</li>
+    <li><a href="http://caniuse.com/css-mediaqueries">Support is fantastic for mobile browsers</a>.</li>
+    <li><a href="http://mediaqueri.es/">Examples</a> | <a href="https://developer.mozilla.org/en-US/docs/CSS/Media_queries">Detailed Information</a></li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h2>Media Queries</h2>
+  <h4>Separate Sheet Style:</h4>
+  <pre><code>&lt;link rel="stylesheet" media="screen and (min-device-width: 800px)" href="800.css" /&gt;</code></pre>
+	<h4>Inline Style:</h4>
+  <pre><code>@media screen and (min-device-width: 800px){
+  //CSS goes here...
+}</code></pre>
+  <ul>
+    <li>Media type definition comes first, in this case we're using "screen". Support of media types outside of Screen, Print, and All is lacking. <a href="http://www.w3.org/TR/CSS2/media.html">#ListOfTypes</a></li>
+    <li>The above code will apply the media query styling to the document only if the device viewing it has a width of 800px or wider.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h1>Media Query "Gotcha's"</h1>
+</section>
+
+<section class="slide">
+	<h2>Media Query "Gotcha's"</h2>
+  <h3>Media Queries aren't necessarily exclusive!</h3>
+  <pre><code>body {
+    background: gray;
+}
+@media all and (min-device-width:500px) {
+    body {
+        background: blue;
+    }
+}
+@media all and (min-device-width:700px) {
+    body {
+        background: red;
+    }
+}</code></pre>
+  <ul>
+    <li>The above code will produce a gray background by default. If the width of the screen is at LEAST 500px, the background will be blue... unless it's at least 700px... where it'll be red.</li>
+    <li>Old CSS rules still apply, beware of specificity and cascade order.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h2>Media Query "Gotcha's"</h2>
+  <h3>There's a difference between width and device-width.</h3>
+  <pre><code>@media all and (min-width:700px){
+  //CSS Here
+}</code></pre>
+  <pre><code>@media all and (min-device-width:700px){
+  //CSS Here
+}</code></pre>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/CSS/Media_queries#device-width">device-width</a>: Describes the width of the output device (meaning the entire screen or page, rather than just the rendering area, such as the document window).</li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/CSS/Media_queries#width">width:</a> The width media feature describes the width of the rendering surface of the output device (such as the width of the document window, or the width of the page box on a printer).</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h2>Media Query "Gotcha's"</h2>
+  <h3>Max width or Min width?</h3>
+  <ul>
+    <li>Max means: "no more than". The window can't be any wider than "X" or these styles won't apply.</li>
+    <li>Min means: "no less than". The window can't be any thinner than "X" or these styles won't apply.</li>
+    <li>Min fits best with a mobile first approach. It lets you easily scale upward.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h2>Media Query "Gotcha's"</h2>
+  <h3>PXs or %s or EMs?</h3>
+  <ul>
+    <li>Use EMs for anything text related: font-size, line-height, anything... <a href="http://css-tricks.com/why-ems/">#WhyEms?</a></li>
+    <li>Use percentages for structure like columns and grids.</li>
+    <li>Use PXs in your media queries, unless you want to adjust to the size of your content, then use EMs.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h1>&lt;meta name="viewport"&gt;</h1>
+</section>
+
+<section class="slide">
+	<h2>&lt;meta name="viewport"&gt;</h2>
+  <h3>Why?</h3>
+  <ul>
+    <li>Mobile browsers assume that you're viewing a big desktop site so they set the viewport width (in the case of iOS Safari) to 980px.</li>
+    <li>This meta-tag rejects that assumption and adjusts the viewport to suit your needs.</li>
+    <li><a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/">Learn More</a></li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h2>&lt;meta name="viewport"&gt;</h2>
+  <h4>Typical Use Case for <acronym title="Responsive Web Design">RWD</acronym></h4>
+  <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+  <ul>
+  	<li>width=device-width: Instead of the 980px default, set the viewport width to the device width... let the media queries handle the rest.</li>
+    <li>initial-scale=1: Ensures that upon opening, your layout will be displayed properly at 1:1 scale. No zooming will be applied. This property can set a max/min zoom level or prevent zooming all together.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h1>Adaptive Design</h1>
+</section>
+
+<section class="slide">
+	<h2>Adaptive Design</h2>
+  <h3>Adaptive vs Responsive</h3>
+  <ul>
+    <li>Responsive Design is <em>Client Side</em>. It's powered by media queries and is device agnostic.</li>
+    <li>Adaptive Design is <em>Server Side</em>. It detects the abilities of the device (primarily through its User Agent) and adjusts the content accordingly.</li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h2>Adaptive Design</h2>
+  <h3>User Agent: <?php echo $_SERVER['HTTP_USER_AGENT']; ?></h3>
+  <ul>
+  	<li>Many libraries (even open source) exist out there to determine your device based on the user agent.</li>
+    <li>PHP: <a href="https://github.com/serbanghita/Mobile-Detect">Mobile-Detect</a></li>
+  </ul>
+</section>
+
+<section class="slide">
+	<h1>Responsive Frameworks</h1>
+</section>
+
+<section class="slide">
+	<h2>Responsive Frameworks</h2>
+  <ul>
+  	<li>Frameworks help you put together responsive sites faster!</li>
+    <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> (<a href="http://twitter.github.com/bootstrap/">LESS</a> | <a href="https://github.com/jlong/sass-twitter-bootstrap">Sass Fork</a>)</li>
+    <li><a href="http://foundation.zurb.com/">Foundation 3</a> (<a href="http://foundation.zurb.com/">Sass</a>)</li>
+  </ul>
+</section>
+
+
+
+<section class="slide">
+	<h1>Let's build a Responsive/Adaptive site!</h1>
+</section>
+
+<!-- End slides. -->
+
+
+<!-- Begin extension snippets. Add or remove as needed. -->
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- deck.goto snippet -->
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<!-- deck.hash snippet -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- End extension snippets. -->
+
+
+<!-- Required JS files. -->
+<script src="jquery-1.7.2.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="core/deck.core.js"></script>
+<script src="extensions/hash/deck.hash.js"></script>
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
